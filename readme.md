@@ -33,6 +33,7 @@ Crée une mutation qui prend en paramètres :
 - un code (FR, BE, AN, ...)
 - un nom (France, Belgique, Andorre, ...)
 - un emoji (🇫🇷, 🇧🇪, 🇦🇩, ...)
+
 et qui enregistre cette entrée en BDD.
 
 ## Lecture de données
