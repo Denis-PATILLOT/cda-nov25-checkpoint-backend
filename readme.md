@@ -52,7 +52,7 @@ Ecris une fonction qui convertit des degrés Celsius en degrés Fahrenheit et te
 
 ## Tests d'intégration
 
-Ecris un test d'intégration avec qui vérifie que la lecture des pays depuis l'API fonctionne bien.
+Ecris un test d'intégration qui vérifie que la lecture des pays depuis l'API fonctionne bien.
 Si tu as le temps, teste également la mutation qui permet de créer un pays en BDD.
 
 Tip : Ce bout de code pourra t'être utile pour vider la BDD avant chaque test
