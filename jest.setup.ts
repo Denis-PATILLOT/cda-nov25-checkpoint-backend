@@ -4,6 +4,7 @@ import db from "./src/db/index";
 
 beforeAll(async() => {
   await db.initialize();
+  await db.synchronize(true)
 });
 
 beforeEach(async() => {

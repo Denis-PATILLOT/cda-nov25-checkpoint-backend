@@ -11,7 +11,7 @@ const typeDefs = `#graphql
   }
   
   type Query {
-    countries() : [Country]!
+    countries: [Country]
   }
 `;
 
@@ -24,17 +24,16 @@ const resolvers = {
 describe("integration tests for our API", () => {
 	it("returns a list of countries ", async () => {
 		const serverTest = new ApolloServer({
-			// pas réussi à brancher ma db à cette instance de test "ApolloServer" :/
 			typeDefs,
 			resolvers,
 		});
 
 		const response = await serverTest.executeOperation({
-			query: "query Countries() { countries() }",
+			query: "query Countries { countries { name id emoji } }",
 		});
 
 		assert(response.body.kind === "single");
 		expect(response.body.singleResult.errors).toBeUndefined();
-		expect(response.body.singleResult.data?.hello).toHaveLength(0);
+		expect(response.body.singleResult.data?.countries).toHaveLength(0);
 	});
 });
