@@ -1,0 +1,41 @@
+{
+  "name": "cda-nov25-checkpoint-backend",
+  "version": "1.0.0",
+  "description": "Le but de cet exercice est de créer une API GraphQL avec Apollo Server, TypeGraphQL et TypeORM pour enregistrer et lire des pays avec leur code, leur nom et leur emoji.",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "ts-node-dev src/index.ts",
+    "biome": "npx biome check --write ./src",
+    "test": "jest --runInBand"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Denis-PATILLOT/cda-nov25-checkpoint-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Denis-PATILLOT/cda-nov25-checkpoint-backend/issues"
+  },
+  "homepage": "https://github.com/Denis-PATILLOT/cda-nov25-checkpoint-backend#readme",
+  "dependencies": {
+    "@apollo/server": "^5.4.0",
+    "class-validator": "^0.14.3",
+    "graphql": "^16.12.0",
+    "graphql-scalars": "^1.25.0",
+    "reflect-metadata": "^0.2.2",
+    "sqlite3": "^5.1.7",
+    "ts-dotenv": "^0.9.1",
+    "ts-node-dev": "^2.0.0",
+    "type-graphql": "^2.0.0-rc.3",
+    "typeorm": "^0.3.28"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.3.14",
+    "@types/jest": "^30.0.0",
+    "jest": "^30.2.0",
+    "ts-jest": "^29.4.6",
+    "typescript": "^5.9.3"
+  }
+}
